@@ -1,0 +1,15 @@
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="crm_claim_services_authorizenet_form">
+            <field name="name">CRM - Claims Form</field>
+            <field name="model">crm.claim</field>
+	    <field name="inherit_id" ref="crm_claim_sale_services.crm_claim_services_form" />
+            <field name="arch" type="xml">
+		<field name="partner_id" position="after" >
+		    <field name="payment_profile" />
+		</field>
+	</record>
+
+    </data>
+</openerp>
