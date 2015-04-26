@@ -9,6 +9,7 @@
 		<field name="partner_id" position="after" >
 		    <field name="payment_profile" />
 		</field>
+	    </field>
 	</record>
 
     </data>

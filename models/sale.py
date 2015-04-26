@@ -11,7 +11,7 @@ class SaleOrder(osv.osv):
 
 	#Copy the card token to the claim for use in any charge/invoice
 	if sale.payment_profile:
-	    vals['payment_profile'] = sale.payment_profile.id
+	    vals['default_payment_profile'] = sale.payment_profile.id
 
 	return vals
 
